@@ -11,245 +11,227 @@
 				content: "";
 				display: block;
 			}
-
 			section{
 				min-height: 100vh;
 			}
 
-			#section-showcase{
-				background-image: url(./images/showcase.jpg);
+			#image{
+				background-image: url(img/sky2.jpg);
 				background-repeat: no-repeat;
 				background-size: cover;
+        background-position: center;
 			}
 
 			html{
 				scroll-behavior: smooth;
 			}
 
+      .bg{
+        background-image: url(img/sky.jpg);
+      }
 		</style>
 	</head>
 	
-	<body>
-			<nav id = "top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"> 
-				<a class="navbar-brand" href="#section-showcase"> <strong>Nanda's Portfolio</strong></a>
+	<body class="bg">
+    
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Nanda Moni Das</a>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="Navbar">
+
+        <ul class="nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#image">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+		<section id="image" class="jumbotron d-flex align-items-center"> 
+			<div class="container text-left text-dark">
+				<h1>HELLO WORLD!!!</h1>
+				<p>Welcome to my portfolio.</p>
+			</div>
+		</section>
+
+    <div class="container">	
+
+			<section id="about" class="bg-light container-fluid pb-4">
+        <div class="container bg-info">
+				  <h1 class="text-center">About</h1> 
+        </div>
+				<hr>
 				
-				<div class="collapse navbar-collapse" id="menu">	
-					<ul class="nav navbar-nav ml-auto">
-						
-						<li class="nav-item">	
-							<a class="nav-link" href="#section-home">Home</a>
-						</li>
-						<li class="nav-item">	
-							<a class="nav-link" href="#section-about">About</a>	
-						</li>
-						<li lass="nav-item">	
-							<a class="nav-link" href="#section-projects">Projects</a>
-						</li>
-						<li class="nav-item">	
-							<a class="nav-link" href="#section-blog">Blog</a>
-						</li>
-						<li class="nav-item">	
-							<a class="nav-link" href="#section-contact">Contact</a>
-						</li>
-
-					</ul>
+				<div class="row">
+					<div class="col-lg-2 col-sm-4">
+						<img src="img/90.jpg" class="img-fluid img-thumbnail pb-2">
+					</div>
+					<div class="col-lg-10 col-sm-8 text-right">
+						<h4>NANDA DAS</h4>
+						<p>I am a senior student at the University of New Orleans, working towards my Bachelor's degree. I am a Computer Science major and a Mathematics minor. Currently, I am working as an undergraduate research assistant at UNO. I am also looking for an internship position to expand my knowledge and skills as well as gain professional work experience. </p>
+					</div>
 				</div>
 
-			</nav>
+        <div class="container bg-info pb-2">
+          <table class="table mb-3">
+            <thead>
+              <tr>
+                <th colspan="2" class="text-center">Technical Skills</th>
+              </tr>
+            </thead>
+            <tbody>     
+              <tr class="table-primary">
+                <td>Programming tools</td>
+                <td>Java, JavaScript</td>
+              </tr>
+              <tr class="table-success">
+                <td>Frontend tools</td>
+                <td>HTML, CSS</td>
+              </tr>
+             <tr class="table-danger">
+                <td>Database tools</td>
+                <td>MongoDB, Mongoose, SQL</td>
+              </tr>
+              <tr class="table-info">
+                <td>Version Control & Deployment tools</td>
+                <td>git, github, gitlab</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Architecture & Design</td>
+                <td>OOP, MEAN Stack, REST, Agile, TDD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>	
+			</section>
 
-			<section id="section-showcase" class="jumbotron d-flex align-items-center"> 
-				<div class="container text-center text-light">
-					<h1>Hello!!!</h1>
-					<p>Welcome to my portfolio.</p>
+			<section id="project" class="bg-light container-fluid my-4 pb-4"> 
+        <div class="container bg-info">
+				  <h1 class="text-center">Projects</h1>
+        </div>
+				<hr>
+				<p>Created a program that serves as combat system for a text-based adventure game. Researched and presented a recommendation report on Antivirus Software. Ongoing research on RNA/DNA Binding Prediction.</p>
+				
+        <div class="container">
+					<div id="projects" class="card-deck text-center">
+						
+            <a class="card bg-info btn" href="#" target="_blank">
+						<div class="card-header">
+							<h4 class="text-light">Project</h4>
+						</div>
+						<img class="card-img-top" src="img/code1.jpg">
+						<div class="card-body">
+							<p class="card-title text-light">First</p>
+						</div>
+						<div class="card-footer"> 
+							<small class="text-muted">by Nanda Das</small>
+						</div>
+						</a>
+
+						<a class="card bg-warning btn" href="#" target="_blank">
+						<div class="card-header">
+							<h4 class="text-light">Project</h4>
+						</div>
+						<img class="card-img-bottom" src="img/code2.jpg">
+						<div class="card-body">
+							<p class="card-title text-light">Second</p>
+						</div>
+						<div class="card-footer"> 
+							<small class="text-muted">by Nanda Das</small>
+						</div>
+						</a>
+
+            <a class="card bg-info btn" href="#" target="_blank">
+            <div class="card-header">
+              <h4 class="text-light">Project</h4>
+            </div>
+            <img class="card-img-bottom" src="img/code1.jpg">
+            <div class="card-body">
+              <p class="card-title text-light">Third</p>
+            </div>
+            <div class="card-footer"> 
+              <small class="text-muted">by Nanda Das</small>
+            </div>
+            </a>
+					</div>
 				</div>
 			</section>
 
-			<div class="container-fluid">	
-				<aside id="sidebar"> 
-					<div class="bg-dark text-light float-right col-4 pt-4 mt-4">
-						<h3>News: </h3>
-						<p>I am currently learning how to create my digital portfolio.</p>
-					</div>
-				</aside>	
+			<section id="blog" class="bg-light pb-1 container-fluid">
+        <div class="container bg-info"> 
+				  <h1 class="text-center">Blog</h1>
+        </div>
+				<hr>
+				<p>Computer Science related blog posts.</p>
+				<hr>
 
-				<section id="section-home" class="bg-danger p-1 container-fluid"> 
-					<h1>Welcome</h1>
-					<hr>
-					<p>
-						Welcome to my world! Here you will get to know all about me. This portfolio tells about my CS skills, knowledge, projects I have done, my blog posts and my contact information. This is just the beginning. It will be completed soon.  
-					</p>
-				</section>	
+        <div class="card-columns">
 
-				<section id="section-about" class="bg-primary container-fluid pb-1">
-					<h1>About</h1> 
-					<hr>
-					
-					<div class="row">
-						<div class="col-lg-2 col-sm-4">
-							<img src="images/profile.png" class="img-fluid">
-						</div>
-						<div class="col-lg-10 col-sm-8">
-							<h4>NANDA DAS</h4>
-							<p>A Computer Science student at UNO.</p>
-						</div>
-					</div>	
+          <div class="card bg-info">
+            <img class="card-img-top" src="img/dna.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Learn the Basics of HTML in Two Minutes!!!</h4>
+              <p class="card-text">The purpose of this blog is to help people learn the bacis of HTML.</p>
+              <a href="posts/post1.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
 
-					<table class="table mt-4">
-						<thead>
-							<tr>
-								<th colspan="2" class="text-center">Technical Skills</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Programming tools</th>
-								<td>Java, JavaScript</td>
+          <div class="card bg-warning">
+            <img class="card-img-top" src="img/dna.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Build ___ using JavaScript</h4>
+              <p class="card-text">This blog is about my experience of building a simple ___ using JavaScript.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
 
-							</tr>
-							<tr>
-								<th>Frontend tools</th>
-								<td>HTML, CSS</td>
-
-							</tr>
-							<tr>
-								<th>Database tools</th>
-								<td>MongoDB, Mongoose, SQL</td>
-
-							</tr>
-							<tr>
-								<th>Version Control & Deployment tools</th>
-								<td>git, github, gitlab</td>
-
-							</tr>
-							<tr>
-								<th>Architecture & Design</th>
-								<td>OOP, MEAN Stack, REST, Agile, TDD</td>
-
-							</tr>
-						</tbody>
-
-					</table>
-				</section>
-
-				<section id="section-projects" class="bg-success container-fluid"> 
-					<h1>Projects</h1>
-					<hr>
-					<p>Created a program that serves as combat system for a text-based adventure game. Researched and presented a recommendation report on Antivirus Software. Ongoing research on RNA/DNA Binding Prediction.</p>
-					<div class="container">
-						<div id="projects" class="card-deck text-center">
-							
-							<a class="card bg-dark btn" href="#" target="_blank">
-							<div class="card-header">
-								<p class="text-light">Project</p>
-							</div>
-							<img class="card-img-top" src="images/logo.png">
-							<div class="card-body">
-								<h4 class="card-title text-light">First</h4>
-							</div>
-							<div class="card-footer"> 
-								<small class="text-muted">by Nanda Das</small>
-							</div>
-							</a>
-
-							<a class="card bg-dark btn" href="#" target="_blank">
-							<div class="card-header">
-								<p class="text-light">Project</p>
-							</div>
-							<img class="card-img-top" src="images/logo.png">
-							<div class="card-body">
-								<h4 class="card-title text-light">Second</h4>
-							</div>
-							<div class="card-footer"> 
-								<small class="text-muted">by Nanda Das</small>
-							</div>
-							</a>
-
-							<a class="card bg-dark btn" href="#" target="_blank">
-							<div class="card-header">
-								<p class="text-light">Project</p>
-							</div>
-							<img class="card-img-top" src="images/logo.png">
-							<div class="card-body">
-								<h4 class="card-title text-light">Third</h4>
-							</div>
-							<div class="card-footer"> 
-								<small class="text-muted">by Nanda Das</small>
-							</div>
-							</a>
-
-						</div>
-					</div>
-				</section>
-
-
-				<section id="section-blog" class="bg-warning pb-1 container-fluid"> 
-					<h1>Blog</h1>
-					<hr>
-					<p>In this blog you will get to know the basics of HTML.</p>
-					<hr>
-					
-					<article class="container">
-						<h3>Learn the Basics of HTML in Two Minutes!!!</h3>
-						<small>Posted by Nanda Das on February 6.</small>
-						<p>The purpose of this blog is to help people learn the bacis of HTML.</p>
-						<a class="btn btn-outline-dark" href="blog_posts/post1.html"> Read More</a>
-						<hr>
-					</article>
-
-					<article class="container">
-						<h3>Topic 2</h3>
-						<small>Posted by Nanda Das on January 30.</small>
-						<p>Summary of my blog will be here.</p>
-						<a class="btn btn-outline-dark" href="post2.html"> Read More</a>
-						<hr>
-					</article>
-
-					<article class="container">
-						<h3>Topic 3</h3>
-						<small>Posted by Nanda Das on February 5.</small>
-						<p>Summary of my blog will be here.</p>
-						<a class="btn btn-outline-dark" href="post3.html"> Read More</a>
-						<hr>
-					</article>
-
-				</section>
+          <div class="card bg-info">
+            <img class="card-img-top" src="img/dna.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+              <h4 class="card-title">Blog 3</h4>
+              <p class="card-text">Summery of blog</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+			</section>
+    </div>
 				
-				<section id="section-contact" class="bg-secondary container-fluid">
-					<h1>Contact</h1> 
-					<hr>
-					<h4 class="text-center">Send Message</h4>
-					<form>
-						<div class="form-group">
-							<input class="form-control" type="text" id="name" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input class="form-control" type="email" id="email" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input class="form-control" type="subject" id="subject" placeholder="Subject">
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" rows="4" id="message" placeholder="Message"></textarea>
-						</div>
-						<button class="btn btn-lg btn-primary" type="submit">Submit</button>
-					</form>
-				</section>
-
-			</div>	
+		<div id="contact" class="bg-dark container-fluid my-3 pb-2 pt-2">
+      <div class="container-fluid bg-info">
+			 <h1 class="text-center text-dark">Contact</h1>
+      </div> 
+			<hr>
+			<p class="text-center text-light">Email: nmdas@uno.edu</p>
+      <p class="text-center text-light">LinkedIn: <a class="a" href="https://www.linkedin.com/in/nandadas/" target="_blank">nandadas</a></p>
+      <p class=" text-center text-light">Phone: 504-326-9602</p>
+		</div>	
 			
-			<footer class="footer bg-light">
-				<div class="container text-muted text-center">
-					<p>Copyright & copy; 2020 Nanda Das</p>
-				</div> 
-			</footer>
+		<footer class="footer bg-light">
+			<div class="container text-muted text-center">
+        <span class="copyright">&copy;2020 Nanda M. Das</span>
+			</div> 
+		</footer>
 
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
 	</body>
-
 </html>
