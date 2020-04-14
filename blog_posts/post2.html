@@ -45,54 +45,22 @@
                     In the CSS file I styled the buttons, sets their color, styles the text, font and app background using CSS tools and techniques. 
     	        </p>
                 
-                <pre>
-                    <code>
-                        &lt;section class=&quot;music&quot;&gt;
-                            &lt;header&gt;
-                                &lt;h1&gt;Musical Buttons&lt;/h1&gt;
-                                &lt;p&gt;Tap the colored boxes to play music.&lt;p&gt;
-                            &lt;/header&gt;
-                            &lt;div class=&quot;buttons&quot;&gt;
-                                &lt;div class=&quot;buttons1&quot;&gt;
-                                    &lt;audio src=&quot;./sounds/bubbles.mp3&quot;class=&quot;sound&quot;&gt;
-                                    &lt;/audio&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/section&gt;
-                    </code>
-                </pre>
+                <img src="images/code1.png">
 
     	        <h3 class='text-green'>JavaScript Functions</h3>
     	        <p>
     	            For the JavaScript part of the app, the first line of music.js file calls addEventListener() which is an inbuilt function in JavaScript which attaches an event handler to the specified element without overwriting existing event handlers. Many event handlers can be added to one element. It makes it easier to control how the event reacts to bubbling. The method takes three parameters. The first is the type of the event, second parameter is the function we want to call when the event occurs. The third parameter is a Boolean value and it is optional. In this app, the method adds event listeners to window object and when the contents are loaded it runs the arrow function. Then I added the constants sounds and buttons to get all the music files and buttons from the HTML file. The document object represents the web page. If you want to access any element in an HTML page, you always start with accessing the document object. Then the querySelectorAll() method returns all elements in the document that matches a specified CSS selector. In this case, it returns all the sound class and buttons class with all the div tags from the CSS file. 
     	        </p>
-
-                <pre>
-                    <code>
-                        window.addEventListener("load", () => {
-                            const sounds = document.querySelectorAll(".sound");
-                            const buttons = document.querySelectorAll(".buttons div");
-                        });
-                    </code>
-                </pre>
+                
+                <img src="images/code2.png">
 
                 <h3 class='text-green'>Playing Sounds</h3>
                 <p>
                     Now for the sound part I get all the buttons and call the JavaScript Array forEach() method which calls a function once for each element in an array, in order. Then I create a function to get the sounds taking the buttons and its respective sound index as parameters. Since I have access to each button, I added an event listener to each one of them. So, whenever I click on the buttons it runs a function and calls the sounds with its index where 0 is the first sound, 1 is the second sound and so on. Then I set the current time to 0 so that the sound restarts every time I click on a button otherwise I have to wait until the sound finishes to click again. At last I call the play() method which is the HTML audio/video DOM method used to start playing an audio or video. 
                 </p>
                 
-                    <pre>
-                        <code>
-                            buttons.forEach((button, index) => {
-                                button.addEventListener("click", function() {
-                                    sounds[index].currentTime = 0;
-                                    sounds[index].play();
-                                });
-                            });
-                        </code>
-                    </pre>
+                <img src="images/code3.png">
                 
-
     	        <h3 class='text-green'>Conclusion</h3>
     	        <p>
     	           So this is how I created a simple Music App using HTML, CSS and JavaScript.     
