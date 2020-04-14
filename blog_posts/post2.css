@@ -31,6 +31,11 @@ body{
         box-shadow: 10px 10px 5px grey;
 	}
 	
+	img{
+		height: 100%;
+		width: 100%;
+	}
+	
 	ul{
 		list-style-type: circle;
 		background: #fefbd8;
